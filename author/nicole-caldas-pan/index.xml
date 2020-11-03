@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nicole Caldas Pan | ECONOSTATBLOG</title>
+    <link>/author/nicole-caldas-pan/</link>
+      <atom:link href="/author/nicole-caldas-pan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Nicole Caldas Pan</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>pt-br</language>
+    <image>
+      <url>/media/social_media.jpg</url>
+      <title>Nicole Caldas Pan</title>
+      <link>/author/nicole-caldas-pan/</link>
+    </image>
+    
+  </channel>
+</rss>
