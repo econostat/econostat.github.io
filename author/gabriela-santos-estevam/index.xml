@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gabriela Santos Estevam | ECONOSTATBLOG</title>
-    <link>/author/gabriela-santos-estevam/</link>
-      <atom:link href="/author/gabriela-santos-estevam/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://econostatblog.github.io/author/gabriela-santos-estevam/</link>
+      <atom:link href="https://econostatblog.github.io/author/gabriela-santos-estevam/index.xml" rel="self" type="application/rss+xml" />
     <description>Gabriela Santos Estevam</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>pt-br</language>
     <image>
-      <url>/media/social_media.jpg</url>
+      <url>https://econostatblog.github.io/media/social_media.jpg</url>
       <title>Gabriela Santos Estevam</title>
-      <link>/author/gabriela-santos-estevam/</link>
+      <link>https://econostatblog.github.io/author/gabriela-santos-estevam/</link>
     </image>
     
   </channel>

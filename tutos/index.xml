@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | ECONOSTATBLOG</title>
+    <link>https://econostatblog.github.io/tutos/</link>
+      <atom:link href="https://econostatblog.github.io/tutos/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>pt-br</language><lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://econostatblog.github.io/media/social_media.jpg</url>
+      <title>Posts</title>
+      <link>https://econostatblog.github.io/tutos/</link>
+    </image>
+    
+    <item>
+      <title>Instalando o Blogdown e o tema Academic.</title>
+      <link>https://econostatblog.github.io/tutos/instalando-o-hugo-e-o-tema-academic/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://econostatblog.github.io/tutos/instalando-o-hugo-e-o-tema-academic/</guid>
+      <description>
+&lt;link href=&#34;https://econostatblog.github.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://econostatblog.github.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;o-que-é-o-blogdown-e-o-hugo&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;O que é o &lt;strong&gt;&lt;em&gt;Blogdown&lt;/em&gt;&lt;/strong&gt; e o &lt;strong&gt;Hugo&lt;/strong&gt;?&lt;/h1&gt;
+&lt;p&gt;O pacote &lt;a href=&#34;https://cran.r-project.org/web/packages/blogdown/blogdown.pdf&#34;&gt;&lt;strong&gt;&lt;em&gt;blogdown&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; proporciona ao usuário escrever posts de blog e páginas da web no &lt;em&gt;R Markdown&lt;/em&gt;. Ele suporta os geradores de sites estáticos &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; e &lt;a href=&#34;https://hexo.io&#34;&gt;Hexo&lt;/a&gt;, sendo que o gerador &lt;em&gt;Hugo&lt;/em&gt; é o utilizado pelo &lt;a href=&#34;https://econostat.github.io/&#34;&gt;ECONOSTATBLOG&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O site é gerado a partir de documentos &lt;em&gt;R Markdown&lt;/em&gt;, ao caso da elaboração pelo &lt;strong&gt;Rstudio&lt;/strong&gt;, o que traz ao usuário uma grande vantagem para o uso da programação em &lt;em&gt;R&lt;/em&gt; e tem como benefício os documentos dinâmicos, fazendo com que os resultados de suas análises - como tabelas, gráficos, valores embutidos. podem ser calculados e renderizados dinâmicamente a partir do código &lt;em&gt;R&lt;/em&gt;. Com o &lt;em&gt;Markdown&lt;/em&gt; tem-se a possibilidade de publicar livros em formatos de &lt;em&gt;PDF&lt;/em&gt; e &lt;em&gt;Epub&lt;/em&gt; e escrever documentos técnicos facilmente, visto que o &lt;em&gt;blogdown&lt;/em&gt; herda o formato de saída &lt;code&gt;HTML&lt;/code&gt; do &lt;span class=&#34;citation&#34;&gt;Xie (&lt;a href=&#34;#ref-xie2017blogdown&#34; role=&#34;doc-biblioref&#34;&gt;2017&lt;/a&gt;)&lt;/span&gt;. O &lt;em&gt;blogdown&lt;/em&gt; é para sites de uso geral, e não apenas para blogs.&lt;/p&gt;
+&lt;p&gt;Já o &lt;strong&gt;Hugo&lt;/strong&gt; é um gerador de sites estáticos no qual baseia-se o pacote &lt;em&gt;Blogdown&lt;/em&gt;. Via de regra, um site estático consiste basicamente de uma coleção de arquivos &lt;code&gt;HTML&lt;/code&gt; armazenados num servidor que irá prover os usuários da página com os conteúdos gerados previamente, tornando o acesso mais rápido quando comparado aos sites dinâmicos.&lt;/p&gt;
+&lt;p&gt;O &lt;strong&gt;Hugo&lt;/strong&gt; possui algumas alternativas, como os geradores &lt;strong&gt;Jekyll&lt;/strong&gt; e &lt;strong&gt;Hexo&lt;/strong&gt;, mas destaca-se por sua facilidade de instalação, pouca necessidade de gerenciamento de dependências e agilidade da renderização das páginas ou posts.&lt;/p&gt;
+&lt;p&gt;Operacionalmente, o &lt;strong&gt;Hugo&lt;/strong&gt; possui sua própria estrutura de arquivos, cada qual com funções e interações próprias dentro de um website. Via de regra, constam num projeto os seguintes diretórios:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;config.toml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;static/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;themes/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;layouts/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;temas-hugo&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Temas Hugo&lt;/h2&gt;
+&lt;p&gt;Um tema do &lt;strong&gt;Hugo&lt;/strong&gt; trata-se num modelo de arquivos e funções que irão definir várias características do website, como aparência, cores, estrutura das páginas e organização dos menus de navegação. Existem diversos temas, cada qual com uma função específica, e, no caso no &lt;a href=&#34;https://econostat.github.io/&#34;&gt;ECONOSTATBLOG&lt;/a&gt;, foi utilizado o tema &lt;a href=&#34;https://academic-demo.netlify.app/&#34;&gt;Academic&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;instalando-o-blogdown-e-o-hugo.&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Instalando o &lt;strong&gt;&lt;em&gt;Blogdown&lt;/em&gt;&lt;/strong&gt; e o &lt;strong&gt;HUGO&lt;/strong&gt;.&lt;/h1&gt;
+&lt;p&gt;Assumindo-se de que tenha instalado &lt;a href=&#34;https://www.r-project.org&#34;&gt;R&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Team &lt;a href=&#34;#ref-team2020r&#34; role=&#34;doc-biblioref&#34;&gt;2020&lt;/a&gt;)&lt;/span&gt; e a IDE &lt;a href=&#34;https://www.rstudio.com&#34;&gt;RStudio&lt;/a&gt;. É necessário instalar o pacote &lt;em&gt;blogdown&lt;/em&gt; no R. Ele está disponível para ser instalado no CRAN (&lt;em&gt;Comprehensive R Archive Network&lt;/em&gt;) ou pelo GitHub e pode ser instalado pelo seguinte modo:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#instalando pelo CRAN
+install.packages(&amp;#39;blogdown&amp;#39;)
+
+#Ou, instalar pelo GitHub
+if (!require(&amp;quot;remotes&amp;quot;)){
+  install.packages(&amp;quot;&amp;quot;remotes&amp;quot;&amp;quot;)
+} 
+
+remotes::install_github(&amp;#39;rstudio/blogdown&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O &lt;strong&gt;blogdown&lt;/strong&gt; é baseado no gerador de sites estáticos &lt;a href=&#34;https://gohugo.io&#34;&gt;&lt;strong&gt;Hugo&lt;/strong&gt;&lt;/a&gt;, portanto também é necessário instalá-lo. A função &lt;strong&gt;blogdown&lt;/strong&gt; para baixar e instalar automaticamente este gerador pode ser expressa por:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::install_hugo()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Por padrão, ele irá instalar a última versão do Hugo, mas é possível escolher a versão específica de acordo com a preferência. Para atualizar ou reinstalar o Hugo, é possível chamar a função &lt;code&gt;blogdown::install_hugo()&lt;/code&gt; novamente. Para verificar a versão atual no sistema, basta chamar a função &lt;code&gt;blogdown::hugo_version()&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Para mais informações de versões disponíveis e recentes do Hugo: &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34; class=&#34;uri&#34;&gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;instalando-o-tema-academic.&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Instalando o tema &lt;strong&gt;Academic&lt;/strong&gt;.&lt;/h1&gt;
+&lt;p&gt;Posto que o usuário já tenha instalado &lt;strong&gt;RStudio&lt;/strong&gt;, juntamente com o pacote &lt;strong&gt;&lt;em&gt;Blogdown&lt;/em&gt;&lt;/strong&gt; e o gerador de sites &lt;strong&gt;HUGO&lt;/strong&gt;, a criação de um site que utiliza como &lt;em&gt;template&lt;/em&gt; o tema &lt;em&gt;Academic&lt;/em&gt; é simples, semelhante à criação de um projeto.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Inicie um novo projeto no RStudio.&lt;/li&gt;
+&lt;li&gt;Escolha se o projeto irá ser armazenado num diretório já existente ou num novo diretório. Neste exemplo, optou-se por utilizar um novo diretório.&lt;/li&gt;
+&lt;li&gt;Escolha a opção de criar um &lt;em&gt;website&lt;/em&gt; utilizando o &lt;em&gt;blogdown&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Em seguida, deve-se escolher o nome do diretório que irá conter os arquivos &lt;em&gt;website&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Na mesma janela, também deve-se escolher em qual pasta o diretório do &lt;em&gt;website&lt;/em&gt; será criado.&lt;/li&gt;
+&lt;li&gt;O próximo passo é escolher o tema que será utilizado pelo &lt;strong&gt;Hugo&lt;/strong&gt;. Neste exemplo será utilizado o tema &lt;strong&gt;Academic&lt;/strong&gt;, o mesmo utilizado no &lt;a href=&#34;https://econostat.github.io/&#34;&gt;ECONOSTATBLOG&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;O &lt;strong&gt;RStudio&lt;/strong&gt;, via de regra, irá se encarregar de baixar os arquivos necessários para a criação do site, bastando somente que o usuário informe o repositório do &lt;strong&gt;GitHub&lt;/strong&gt; referente ao tema.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Para finalizar a criação do &lt;em&gt;website&lt;/em&gt;, clique em “Criar projeto”. O &lt;strong&gt;RStudio&lt;/strong&gt; irá realizar o &lt;em&gt;download&lt;/em&gt; dos arquivos do tema e criar o projeto.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;install.png&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Importante citar que o tutorial acima foi testado em 26/01/2021. O tema &lt;em&gt;Academic&lt;/em&gt; está em constante evolução, sendo possível que o método de instalação se altere. É importante que o usuário acompanhe o &lt;a href=&#34;https://academic-demo.netlify.app/&#34;&gt;site&lt;/a&gt; do autor para eventuais alterações.&lt;/p&gt;
+&lt;p&gt;As informações presentes neste capítulo encontram-se em &lt;span class=&#34;citation&#34;&gt;Xie (&lt;a href=&#34;#ref-xie2017blogdown&#34; role=&#34;doc-biblioref&#34;&gt;2017&lt;/a&gt;)&lt;/span&gt;.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-team2020r&#34;&gt;
+&lt;p&gt;Team, R Core. 2020. “R: A Language and Environment for Statistical Computing.”&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-xie2017blogdown&#34;&gt;
+&lt;p&gt;Xie, Alison Presmanes &amp;amp; Thomas, Yihui &amp;amp; Hill. 2017. &lt;em&gt;Blogdown: Creating Websites with R Markdown&lt;/em&gt;. CRC Press.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

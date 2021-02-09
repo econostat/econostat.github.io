@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Michel Augusto Santana da Paixão | ECONOSTATBLOG</title>
-    <link>/author/michel-augusto-santana-da-paixao/</link>
-      <atom:link href="/author/michel-augusto-santana-da-paixao/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://econostatblog.github.io/author/michel-augusto-santana-da-paixao/</link>
+      <atom:link href="https://econostatblog.github.io/author/michel-augusto-santana-da-paixao/index.xml" rel="self" type="application/rss+xml" />
     <description>Michel Augusto Santana da Paixão</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>pt-br</language>
     <image>
-      <url>/media/social_media.jpg</url>
+      <url>https://econostatblog.github.io/media/social_media.jpg</url>
       <title>Michel Augusto Santana da Paixão</title>
-      <link>/author/michel-augusto-santana-da-paixao/</link>
+      <link>https://econostatblog.github.io/author/michel-augusto-santana-da-paixao/</link>
     </image>
     
   </channel>
